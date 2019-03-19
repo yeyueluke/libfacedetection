@@ -1,0 +1,5 @@
+after make the libfacedetection by cmake and make,
+copy libfacedetection.so to the example folder 
+copy /usr/local/share/OpenCV/3rdparty/lib/libippicv.a to usr/local/lib/libippicv.a
+use the following command to compile:
+gcc libfacedetectcnn-example.cpp  -o libfacedetectcnn-example ./libfacedetection.so -I../src `pkg-config --cflags --libs opencv` -lstdc++
